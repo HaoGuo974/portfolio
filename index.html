@@ -4,78 +4,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- En-tête -->
-    <header>
-        <nav>
-            <h1>François Soui-Mine Boursier</h1>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Section Présentation -->
     <section id="presentation">
-        <div class="container">
-            <h2>Bonjour, je suis [Ton Nom]</h2>
-            <p>Je suis un développeur web junior passionné par la création de sites et d'applications web modernes.</p>
-            <a href="#contact" class="cta-btn">Contactez-moi</a>
+        <!-- En-tête -->
+        <div id="first-header">
+            <header>
+                <nav>
+                    <h1>FBSM</h1>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skill-section">Skills</a></li>
+                        <li><a href="#project-section">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+    
+            <!-- Section Présentation -->
+        
+            <div class="container">
+                <div id="container-header-left">
+                    <h2>François Boursier Soui-Mine</h2>
+                    <h3>Learning, coding, and growing every day.</h3>
+                    <div id="btn">
+                        <a class="cta-btn">My Resume</a>
+                        <a href="mailto:tonemail@example.com?subject=Contact%20depuis%20mon%20portfolio" class="cta-btn">Contact me</a>
+                    </div>
+                </div>
+                <div id="container-header-right">
+                    <img src="images/img1.png" alt="man working" id="img1">
+                </div>
+            </div>
         </div>
+        
+        <div id="last-header">
+
+        </div>
+            
+            
+
+            <!-- Fenêtre modale -->
+            <!--<div id="cvModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Mon CV</h2>
+                    <iframe src="mon-cv.pdf" width="100%" height="500px"></iframe>
+                </div>
+            </div> -->
     </section>
 
     <!-- Section Compétences -->
-    <section id="competences">
-        <div class="container">
-            <h2>Compétences</h2>
-            <div class="skills">
-                <div class="skill">
-                    <h3>HTML</h3>
-                    <p>Maîtrise parfaite des bases du HTML5.</p>
-                </div>
-                <div class="skill">
-                    <h3>CSS</h3>
-                    <p>Création de designs responsives avec Flexbox et Grid.</p>
-                </div>
-                <div class="skill">
-                    <h3>JavaScript</h3>
-                    <p>Développement d'interactivité avec JavaScript et des frameworks comme React.</p>
-                </div>
-                <div class="skill">
-                    <h3>Node.js</h3>
-                    <p>Développement d'API et de backends avec Node.js et Express.</p>
+    <section id="skill-section" class="info-container">
+        
+        <h3>My Stacks</h3>
+        <div id="skills">
+            <div class="title">
+                <h3 class="titreStacks">Frontend</h3>
+                <div class="techno">
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="html" />
+                        <p>HTML</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="css" />
+                        <p>CSS</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="javascript" />
+                        <p>Javascript</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="react" />
+                        <p>React</p>
+                    </div>
                 </div>
             </div>
-        </div>
+
+            <div class="title">
+                <h3 class="titreStacks">Backend</h3>
+                <div class="techno">
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" />
+                        <p>Java</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="C++" />
+                        <p>C++</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="C" />
+                        <p>C</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" />
+                        <p>Python</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+                        <p>Node.js</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" alt="Flask" />
+                        <p>Flask</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" alt="Django" />
+                        <p>Django</p>
+                    </div>
+                </div>  
+            </div>
+            
+            <div class="title">
+                <h3 class="titreStacks">Database</h3>
+                <div class="techno">
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL" />
+                        <p>MySQL</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg" alt="SQLite" />
+                        <p>SQLite</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" />
+                        <p>PostgreSQL</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="title">
+                <h3 class="titreStacks">Tools</h3>
+                <div class="techno">
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux" />
+                        <p>Linux</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" />
+                        <p>Git</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="docker" />
+                        <p>Docker</p>
+                    </div>
+                </div>
+            </div>
+        </div>    
+
     </section>
 
     <!-- Section Projets -->
-    <section id="projets">
-        <div class="container">
-            <h2>Projets</h2>
-            <div class="projects">
-                <div class="project-card">
-                    <h3>Projet 1</h3>
-                    <p>Un projet réalisé en React et Node.js, une application de gestion de tâches.</p>
-                    <a href="https://monprojet1.com" target="_blank" class="project-link">Voir le projet</a>
-                </div>
-                <div class="project-card">
-                    <h3>Projet 2</h3>
-                    <p>Site web dynamique avec un design responsive, réalisé avec HTML, CSS et JavaScript.</p>
-                    <a href="https://monprojet2.com" target="_blank" class="project-link">Voir le projet</a>
-                </div>
-            </div>
+    <section id="project-section" class="info-container">
+        <h3 class="section-title">My Projects</h3>
+        
+        <!-- Catégories -->
+        <div class="categories">
+            <button class="category-btn" onclick="toggleProjects('web')">Websites</button>
+            <button class="category-btn" onclick="toggleProjects('games')">Applications</button>
+            <button class="category-btn" onclick="toggleProjects('scripts')">Scripts</button>
         </div>
+    
+        <!-- Projets par catégorie -->
+         <div id="projects-container">
+            <div id="web" class="projects hidden"></div>
+            <div id="games" class="projects hidden"></div>
+            <div id="scripts" class="projects hidden"></div>    
+         </div>
     </section>
+        
+    
 
     <!-- Section Contact -->
     <section id="contact">
@@ -107,5 +208,7 @@
     </footer>
 
 </body>
+
+<script src="script.js"></script>
 
 </html>
