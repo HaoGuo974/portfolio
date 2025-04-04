@@ -116,6 +116,54 @@ h2 {
     transition: 0.2s;
 }
 
+#presentation .modal {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Contenu de la modale */
+.modal .modal-content {
+    border-radius: 10px;
+    height: 600px;
+    padding: 20px;
+    overflow-x: hidden; /* Masque le défilement vertical */
+    overflow-y: scroll; /* Permet le défilement */
+    position: relative;
+}
+
+.modal .modal-content::-webkit-scrollbar {
+    display: none; /* Cache la barre de défilement horizontale */
+}
+
+.modal-content > img {
+    width: 100%;
+    object-fit: contain; 
+}
+
+.modal-content h2 {
+    font-size: 2rem;
+}
+
+.upper-cv img {
+    margin-left: 10px;
+    width: 40px; 
+    height: 40px;
+}
+
+.upper-cv {
+    display: flex;
+    justify-content: center;
+}
+
+.upper-cv img:hover {
+    transform: scale(1.1);
+}
+
+
+.modal-content .close:hover {
+    color: #6F5E5C;
+}
+
+
 .info-container {
     padding: 20px 10px;
     border-bottom: #333 solid;

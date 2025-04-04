@@ -1,3 +1,29 @@
+// Récupérer les éléments
+const modal = document.getElementById("cvModal");
+const openModalBtn = document.getElementById("openCvBtn");
+const closeModalBtn = document.getElementById("closeModal");
+
+// Ouvrir la modale
+openModalBtn.onclick = function() {
+    modal.style.display = "flex";  // Afficher la modale
+}
+
+// Fermer la modale
+closeModalBtn.onclick = function() {
+    modal.style.display = "none";  // Cacher la modale
+}
+
+// Fermer la modale si l'utilisateur clique en dehors de la fenêtre modale
+window.onclick = function(event) {
+    if (event.target === modal) {
+        modal.style.display = "none";  // Cacher la modale si l'utilisateur clique à l'extérieur
+    }
+}
+
+
+
+
+
 // Liste des projets organisés par catégorie
 const projectsData = {
     web: [

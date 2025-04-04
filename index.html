@@ -31,7 +31,7 @@
                     <h2>François Boursier Soui-Mine</h2>
                     <h3>Learning, coding, and growing every day.</h3>
                     <div id="btn">
-                        <a class="cta-btn">My Resume</a>
+                        <a href="javascript:void(0);" class="cta-btn" id="openCvBtn">My Resume</a>
                         <a href="mailto:tonemail@example.com?subject=Contact%20depuis%20mon%20portfolio" class="cta-btn">Contact me</a>
                     </div>
                 </div>
@@ -41,20 +41,21 @@
             </div>
         </div>
         
-        <div id="last-header">
-
-        </div>
+        <div id="last-header"></div>
             
-            
-
-            <!-- Fenêtre modale -->
-            <!--<div id="cvModal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <h2>Mon CV</h2>
-                    <iframe src="mon-cv.pdf" width="100%" height="500px"></iframe>
+        <!-- Fenêtre modale -->
+        <div id="cvModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeModal">&times;</span>
+                <div class="upper-cv">
+                    <h2>My Resume</h2>
+                    <a href="Francois-Resume.png" download>
+                        <img id="img-download" src="images/download.png" alt="download">
+                    </a>
                 </div>
-            </div> -->
+                <img src="images/Francois-Resume.png"></img>    
+            </div>
+        </div>
     </section>
 
     <!-- Section Compétences -->
