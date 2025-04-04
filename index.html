@@ -164,6 +164,7 @@
         
         <!-- Catégories -->
         <div class="categories">
+            <button class="category-btn" onclick="toggleProjects('selected')">Selected</button>
             <button class="category-btn" onclick="toggleProjects('web')">Websites</button>
             <button class="category-btn" onclick="toggleProjects('games')">Applications</button>
             <button class="category-btn" onclick="toggleProjects('scripts')">Scripts</button>
@@ -171,6 +172,7 @@
     
         <!-- Projets par catégorie -->
          <div id="projects-container">
+            <div id="selected" class="projects hidden"></div>
             <div id="web" class="projects hidden"></div>
             <div id="games" class="projects hidden"></div>
             <div id="scripts" class="projects hidden"></div>    

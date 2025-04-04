@@ -26,6 +26,10 @@ window.onclick = function(event) {
 
 // Liste des projets organisés par catégorie
 const projectsData = {
+    selected: [
+        { title: "Selected 1", desc: "Selected 1", img: "https://via.placeholder.com/600x300", link: "#" },
+        { title: "Selected 2", desc: "Selected 2", img: "https://via.placeholder.com/600x300", link: "#" }
+    ],
     web: [
         { title: "Site E-commerce", desc: "Un site en React et Node.js.", img: "https://via.placeholder.com/600x300", link: "#" },
         { title: "Portfolio", desc: "Un portfolio personnel en HTML/CSS.", img: "https://via.placeholder.com/600x300", link: "#" }
@@ -80,6 +84,7 @@ function toggleProjects(category) {
 
 function categoryToLabel(category) {
     switch (category) {
+        case "selected": return "Selected";
         case "web": return "Websites";
         case "games": return "Applications";
         case "scripts": return "Scripts";
@@ -134,3 +139,8 @@ function removeOldProjects(callback) {
         }, 500);
     });
 }
+
+window.onload = function() {
+    toggleProjects('selected'); // Ouvre la catégorie "selected" par défaut
+};
+
