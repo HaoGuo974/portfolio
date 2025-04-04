@@ -239,12 +239,16 @@ h2 {
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out, box-shadow 0.3s ease-out;
     opacity: 0;
     transform: translateY(10px);
     cursor: pointer;
 }
 
+.project-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); /* Ajout d'une ombre pour l'effet */
+}
+ 
 .project-card.visible {
     opacity: 1;
     transform: translateY(0);
