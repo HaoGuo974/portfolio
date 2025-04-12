@@ -14,6 +14,12 @@ a {
     text-decoration: none;
 }
 
+
+/* ------ */
+/* INDEX  */
+/* ------ */
+
+
 #presentation {
     height: auto;
     min-height: 100vh;
@@ -43,16 +49,20 @@ nav {
 }
 
 nav ul {
-    display: flex;
-    justify-content: space-around;
     list-style: none;
-    width: 50%; 
+    display: flex;
+    gap: 20px;
 }
 
 
 nav ul li a {
     color: #011638;
-    font-weight: 700;
+    font-weight: 550;
+    transition: color 0.3s;
+}
+
+nav li a:hover {
+    color: #6F5E5C;
 }
 
 .container {
@@ -115,6 +125,7 @@ h2 {
 }
 
 #presentation .modal {
+    display: none;
     position: fixed; /* Fixe la modale au-dessus de la page */
     top: 0;
     left: 0;
@@ -131,8 +142,8 @@ h2 {
     border-radius: 10px;
     height: 600px;
     padding: 20px;
-    overflow-x: hidden; /* Masque le défilement vertical */
-    overflow-y: scroll; /* Permet le défilement */
+    overflow-x: hidden; 
+    overflow-y: scroll; 
     position: relative;
 }
 
@@ -148,7 +159,7 @@ h2 {
 }
 
 .modal .modal-content::-webkit-scrollbar {
-    display: none; /* Cache la barre de défilement horizontale */
+    display: none; 
 }
 
 .modal-content > img {
@@ -204,7 +215,7 @@ h2 {
 #skills {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centre les enfants horizontalement */
+    align-items: center; /
 }
 
 #skills > div {
@@ -309,7 +320,7 @@ h2 {
     max-width: 1000px;
     margin-bottom: 15px;
     background: white;
-    padding: 15px;
+    padding: 20px 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease-out, opacity 0.3s ease-out, box-shadow 0.3s ease-out;
@@ -332,6 +343,43 @@ h2 {
     transform: translateY(-10px);
 }
 
+.project-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+}
+
+.left-project-content {
+    width: 60%;
+}
+
+.left-project-content img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+
+.project-content {
+    margin-top: 10px;
+    width: 50%;
+}
+
+.project-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #113647;
+}
+
+.project-content p {
+    margin-bottom: 15px;
+    color: #444;
+}
+
+
+/* ------ */
+/* FOOTER */
+/* ------ */
 
 footer {
     background: linear-gradient(to top, #b0c4de, #f8f9fa);

@@ -31,8 +31,8 @@ const projectsData = {
         { title: "Selected 2", desc: "Selected 2", img: "https://via.placeholder.com/600x300", link: "#" }
     ],
     web: [
-        { title: "Site E-commerce", desc: "Un site en React et Node.js.", img: "https://via.placeholder.com/600x300", link: "#" },
-        { title: "Portfolio", desc: "Un portfolio personnel en HTML/CSS.", img: "https://via.placeholder.com/600x300", link: "#" }
+        { title: "Animals Adoption Website", desc: "A project backend and frontend.", img: "images/web1-img-preview.png", link: "web1.html" },
+        { title: "Portfolio", desc: "My modest Portfolio.", img: "images/web2-img-preview.png", link: "index.html" }
     ],
     games: [
         { title: "Space Adventure", desc: "Un jeu 2D en Unity.", img: "https://via.placeholder.com/600x300", link: "#" },
@@ -100,12 +100,15 @@ function addProjects(container, category) {
         projectCard.classList.add("project-card");
 
         projectCard.innerHTML = `
-            <img src="${project.img}" alt="${project.title}">
+            <a href="${project.link}" class="project-item">
+            <div class="left-project-content">
+                <img src="${project.img}" alt="${project.title}">
+            </div>  
             <div class="project-content">
                 <h3>${project.title}</h3>
                 <p>${project.desc}</p>
-                <a href="${project.link}" class="project-link">Voir le projet</a>
             </div>
+            </a>
         `;
 
         container.appendChild(projectCard);
