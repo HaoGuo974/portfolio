@@ -5,65 +5,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles copy.css">
 </head>
 
 <body>
-    <section id="presentation">
-        <!-- En-tête -->
-        <div id="first-header">
-            <header>
-                <nav>
-                    <h1>FBSM</h1>
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skill-section">Skills</a></li>
-                        <li><a href="#project-section">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
-    
-            <!-- Section Présentation -->
-        
-            <div class="container">
-                <div id="container-header-left">
-                    <h2>François Boursier Soui-Mine</h2>
-                    <h3>Learning, coding, and growing every day.</h3>
-                    <div id="btn">
-                        <a href="javascript:void(0);" class="cta-btn" id="openCvBtn">My Resume</a>
-                        <a href="mailto:tonemail@example.com?subject=Contact%20depuis%20mon%20portfolio" class="cta-btn">Contact me</a>
-                    </div>
-                </div>
-                <div id="container-header-right">
-                    <img src="images/img1.png" alt="man working" id="img1">
-                </div>
-            </div>
+
+    <section id="vertical-bar-section">
+        <div id="vertical-bar">
+            <h1 class="logo">FBSM</h1>
+            <button id="btn-vertical-bar">Search</button>
         </div>
+        <section id="presentation" class="scroll-container">
+            <!-- En-tête -->
+            <div id="first-header">
+                <header>
+                    <nav>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skill-section">Skills</a></li>
+                            <li><a href="#roadmap-section">Roadmap</a></li>
+                            <li><a href="#project-section">Projects</a></li>
+                        </ul>
+
+                        <ul>
+                            <li><a href="#contact">Contact Me</a></li>
+                            <li><a href="#Fr">FR</a></li>
+                        </ul>
+                    </nav>
+                </header>
         
-        <div id="last-header"></div>
+                <!-- Section Présentation -->
             
-        <!-- Fenêtre modale -->
-        <div id="cvModal" class="modal">
-            <div class="modal-content">
-                <span class="close" id="closeModal">&times;</span>
-                <div class="upper-cv">
-                    <h2>My Resume</h2>
-                    <a href="Francois-Resume.png" download>
-                        <img id="img-download" src="images/download.png" alt="download">
-                    </a>
+                <div class="container">
+                    
+                    <div id="container-header-left">
+                        <img src="images/img1.png" alt="man working" id="img1">
+                    </div>
+                    <div id="no-arrow">
+                        <div id="container-header-right">
+                            <!-- Textes de présentation -->
+                            <div id="writing-wrapper">
+                                <div class="writing active">
+                                    <h2>François Boursier Soui-Mine</h2>
+                                    <h3>I’m François, a developer driven by curiosity, creativity, and a love for solving problems. Whether it’s front-end, back-end, or something in between, I enjoy learning fast and building projects that make an impact. Every line of code is a step forward — and I’m just getting started.</h3>
+                                </div>
+                                
+                                <div class="writing">
+                                    <h2>François Boursier Soui-Mine</h2>
+                                    <h3>Learning, coding, and growing every day.</h3>
+                                </div>
+                            </div>
+    
+                            <!-- Boutons CV / Contact -->
+                            <div id="btn">
+                                <a href="javascript:void(0);" class="cta-btn" id="openCvBtn">My Resume</a>
+                                <a href="mailto:tonemail@example.com?subject=Contact%20depuis%20mon%20portfolio" class="cta-btn">Contact me</a>
+                            </div>
+                        </div>
+                        
+                        <div id="left-bottom-header">
+                            <hr>
+                            <div class="arrow-nav">
+                                <button class="arrow left" onclick="showPrev()">&larr;</button>
+                                <button class="arrow right" onclick="showNext()">&rarr;</button>
+                            </div>
+                        </div>
+                        
+                    </div>                    
                 </div>
-                <img src="images/Francois-Resume.png"></img>    
             </div>
-        </div>
+                            
+            <!-- Fenêtre modale -->
+            <div id="cvModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeModal">&times;</span>
+                    <div class="upper-cv">
+                        <h2>My Resume</h2>
+                        <a href="Francois-Resume.png" download>
+                            <img id="img-download" src="images/download.png" alt="download">
+                        </a>
+                    </div>
+                    <img src="images/Francois-Resume.png"></img>    
+                </div>
+            </div>
+        </section>
     </section>
+
+    
 
     <!-- Section Compétences -->
     <section id="skill-section" class="info-container">
-        
-        <h3>My Stacks</h3>
+        <div id="titre">
+            <h3>My Stacks</h3>
+        </div>
         <div id="skills">
-            <div class="title">
+            <div class="title title0">
                 <h3 class="titreStacks">Frontend</h3>
                 <div class="techno">
                     <div class="skill-item">
@@ -85,7 +121,9 @@
                 </div>
             </div>
 
-            <div class="title">
+            <hr>
+
+            <div class="title title1">
                 <h3 class="titreStacks">Backend</h3>
                 <div class="techno">
                     <div class="skill-item">
@@ -119,7 +157,9 @@
                 </div>  
             </div>
             
-            <div class="title">
+            <hr>
+
+            <div class="title title2">
                 <h3 class="titreStacks">Database</h3>
                 <div class="techno">
                     <div class="skill-item">
@@ -137,7 +177,9 @@
                 </div>
             </div>
             
-            <div class="title">
+            <hr>
+
+            <div class="title title3">
                 <h3 class="titreStacks">Tools</h3>
                 <div class="techno">
                     <div class="skill-item">
@@ -158,37 +200,241 @@
 
     </section>
 
+    <!-- Section RoadMap -->
+     <section class="info-container" id="roadmap-section">
+        
+        <h3 id="roadmap">My Roadmap</h3>
+
+        <hr class="timeline horizontal timeline0">
+        <hr class="timeline vertical timeline1">
+        <hr class="timeline vertical timeline2">
+        <hr class="timeline vertical timeline3">
+        <hr class="timeline vertical timeline4">
+        <hr class="timeline vertical timeline5">
+        
+        <span class="date date-aut23">Automn 2023</span>
+        <span class="date  date-win24">Winter 2024</span>
+        <span class="date date-sum24">Summer 2024</span>
+        <span class="date date-aut24">Automn 2024</span>
+        <span class="date date-win25">Winter 2025</span>
+
+
+
+
+        <div class="timeline-item automn23">
+            <div class="content">
+                <span class="course-title">Programming in Java I</span>
+                <div class="each-title">
+                    <h4>Ticket Management System</h4>
+                    <p>Java</p>
+                </div>
+                <div class="each-title">
+                    <h4>To-Do List Application</h4>
+                    <p>Java</p>
+                </div>
+                <div class="each-title">
+                    <h4>Pico Fermi Bagels Game</h4>
+                    <p>Java</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-item winter24">
+            <div class="content">
+                <span class="course-title">Computer Organization</span>
+                <div class="each-title">
+                    <h4>Poule Poule Game</h4>
+                    <p>Assembly</p>
+                </div>
+                <div class="each-title">
+                    <h4>Life Game</h4>
+                    <p>Assembly</p>
+                </div>
+                <div class="each-title">
+                    <h4>Morse Code</h4>
+                    <p>Assembly</p>
+                </div>
+                <hr>
+                <span class="course-title">Development Practices</span>
+                <div class="each-title">
+                    <h4>Contrat Reimbursement</h4>
+                    <p>Java</p>
+                </div>
+                <hr>
+                <span class="course-title">Programming in Java II</span>
+                <div class="each-title">
+                    <h4>Class Attack Game</h4>
+                    <p>Java</p>
+                </div>
+                <div class="each-title">
+                    <h4>Linked List</h4>
+                    <p>Java</p>
+                </div>
+                <div class="each-title">
+                    <h4>Lambda Expression</h4>
+                    <p>Java</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-item summer24">
+            <div class="content">
+                <span class="course-title">Database</span>
+                <div class="each-title">
+                    <h4>Find Lost Documents App</h4>
+                    <p>Java, SQL</p>
+                </div>
+                <hr>
+                <span class="course-title">Web Programming</span>
+                <div class="each-title">
+                    <h4>Non Dynamic Website</h4>
+                    <p>HTML, CSS</p>
+                </div>
+                <div class="each-title">
+                    <h4>Web Form Verification</h4>
+                    <p>HTML, CSS, JS</p>
+                </div>
+                <div class="each-title">
+                    <h4>Dynamic Web Application</h4>
+                    <p>HTML, JS, Python, Flask</p>
+                </div>
+                <hr>
+                <span class="course-title">Software Construction & Maintenance</span>
+                <div class="each-title">
+                    <h4>Canva Generator</h4>
+                    <p>C</p>
+                </div>
+                <div class="each-title">
+                    <h4></h4>
+                    <p>C</p>
+                </div>
+                <div class="each-title">
+                    <h4></h4>
+                    <p>C</p>
+                </div>
+                <hr>
+                <span class="course-title">Personnal</span>
+                <div class="each-title">
+                    <h4>Portfolio Draft</h4>
+                    <p>HTML, CSS, JS</p>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-item automn24">
+            <div class="content">
+                <span class="course-title"> Data Structures and Algorithms</span>
+                <div class="each-title">
+                    <h4>Dynamic Arrays</h4>
+                    <p>C++</p>
+                </div>
+                <div class="each-title">
+                    <h4>Binary Research Trees</h4>
+                    <p>C++</p>
+                </div>
+                <div class="each-title">
+                    <h4>Dijkstra Algorithm</h4>
+                    <p>C++</p>
+                </div>
+                <hr>
+                <span class="course-title">Personnal</span>
+                <div class="each-title">
+                    <h4>Shell Game</h4>
+                    <p>C++</p>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-item winter25">
+            <div class="content">
+                <span class="course-title">Project Management</span>
+                <div class="each-title">
+                    <h4>Senior Sport App</h4>
+                    <p>Node.js, Postgre, React</p>
+                </div>
+                <hr>
+                <span class="course-title">Personal</span>
+                <div class="each-title">
+                    <h4>Current Portfolio</h4>
+                    <p>HTML, CSS, JS</p>
+                </div>
+                <div class="each-title">
+                    <h4>Bidding Website</h4>
+                    <p>HTML, Python, Django</p>
+                </div>
+                <div class="each-title">
+                    <h4>Object Detection Video</h4>
+                    <p>Python, APIs</p>
+                </div>
+                <hr style="margin: 8px 40px; border: none; border-top: 2px dotted">
+                <div class="each-title">
+                    <h4>CS for Web Programming</h4>
+                    <p>Harvard Certif</p>
+                </div>
+            </div>
+        </div>  
+    </section>
+
     <!-- Section Projets -->
     <section id="project-section" class="info-container">
-        <h3 class="section-title">My Projects</h3>
+        <div id="titre-projet">
+            <h3 id="my-projects">My Projects</h3>        
+        </div>
+        
         
         <!-- Catégories -->
         <div class="categories">
-            <button class="category-btn" onclick="toggleProjects('selected')">Selected</button>
-            <button class="category-btn" onclick="toggleProjects('web')">Websites</button>
-            <button class="category-btn" onclick="toggleProjects('games')">Applications</button>
-            <button class="category-btn" onclick="toggleProjects('scripts')">Scripts</button>
+            <button class="category-btn" onclick="toggleProjects('academic')">Academic</button>
+            <button class="category-btn" onclick="toggleProjects('personal')">Personal</button>
         </div>
     
         <!-- Projets par catégorie -->
-        <div id="projects-container">
-            <div id="selected" class="projects hidden"></div>
-            <div id="web" class="projects hidden"></div>
-            <div id="games" class="projects hidden"></div>
-            <div id="scripts" class="projects hidden"></div>    
+        <div id="slider">
+            <div id="projects-container">
+                <div id="academic" class="projects hidden"></div>
+                <div id="personal" class="projects hidden"></div>
+            </div>
+    
+            <hr>
+            <div class="arrow-nav">
+                <button id="projects-prev" class="arrow ">&larr;</button>
+                <button id="projects-next" class="arrow">&rarr;</button>
+            </div>
         </div>
+        
     </section>
         
 
     <!-- Section Contact -->
-    <footer>
-        <div class="footer-container">
+    <footer class="info-container" id="footer">
+        <div class="footer-upper-container">
+            <p>Interested in my work? Let’s discuss collaborations or opportunities. Feel free to reach out or connect via my networks.</p>
+        </div>
+
+        <div class="footer-bottom-container">
             <!-- Section des boutons -->
-            <div class="footer-links">
-                <a href="#" class="footer-btn">More About Me</a>
-                <a href="#" class="footer-btn">All the Projets</a>
-                <a href="#" target="_blank" class="footer-btn">LinkedIn</a>
+            <div class="footer-columns">
+                <div class="content">
+                    <span class="course-title" style="color: #333; margin-bottom: 17px; ">Explore</span>
+                    <a href="#presentation" style="margin-bottom: 10px;" class="footer-btn">Back to top</a>    
+                    <a href="#skill-section" style="margin-bottom: 10px;" class="footer-btn">Skills</a>    
+                    <a href="#roadmap-section" style="margin-bottom: 10px;" class="footer-btn">Roadmap</a>    
+                    <a href="#project-section" class="footer-btn">Projects</a>
+                </div>
+
+                <div class="content">
+                    <span class="course-title" style="color: #333; margin-bottom: 17px; ">About</span>
+                    <a href="" style="margin-bottom: 10px;" class="footer-btn">My Resume</a> 
+                    <a href="" style="margin-bottom: 10px;" class="footer-btn">Who am I ?</a>  
+                    <a href="" style="margin-bottom: 10px;" class="footer-btn">Contact Page</a>  
+                </div>
+
+                <div class="content">
+                    <span class="course-title" style="color: #333; margin-bottom: 17px; ">Get in touch</span>
+                    <a href="" style="margin-bottom: 10px;" class="footer-btn">francois.haoguo@gmail.com</a>    
+                    <a href="" style="margin-bottom: 10px;" class="footer-btn">+1 438 368-6078</a>  
+                    <a href="" style="margin-bottom: 10px;" class="footer-btn">Linkedin</a>  
+                </div>
             </div>
+            
 
             <!-- Formulaire de contact -->
             <div class="footer-contact">
