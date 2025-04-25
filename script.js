@@ -26,10 +26,11 @@ cvModal.addEventListener('click', (e) => {
 // Liste des projets organisés par catégorie
 const projectsData = {
     academic: [
-        { title: "Senior Sport App", desc: "Web platform for health professionnals to create customized exercise programs. Patients have access to their plans and track progress.", img: "images/6150-img-preview.png", link: "web1.html", techs: ["Node.js - PostgreSQL - React"] },
-        { title: "Binary Research Trees", desc: "Implementation of binary search trees with core functions (insertion, deletion, search) and operation visualization on shell. Academic project on data structures.", img: "images/binary-img-preview.png", link: "web1.html", techs: ["C++"] },
-        { title: "Contract Reimbursement", desc: "Automated script processing contract reimbursements from JSON files. Analyzes clauses, calculates eligible amounts, and generates reports.", img: "images/json-img-preview.png", link: "#", techs: ["Java - SQL"]  },
-        { title: "Find Lost Documents App", desc: "Document recovery system where users can locate misplaced files by querying metadata (filename, date, type) stored in a relational database.", img: "images/oracle-img-preview.png", link: "web1.html", techs: ["Java - Oracle"]  },
+        { title: "Senior Sport App", desc: "Web platform for health professionnals to create customized exercise programs. Patients have access to their plans and track progress.", img: "images/6150-img-preview.png", link: "seniorSport.html", techs: ["Node.js - PostgreSQL - React"] },
+        { title: "Binary Research Trees", desc: "Implementation of binary search trees with core functions (insertion, deletion, search) and operation visualization on shell. Academic project on data structures.", img: "images/binary-img-preview.png", link: "binaryTree.html", techs: ["C++"] },
+        { title: "Animal Adoption Website", desc: "This web application allows users to browse, search for, and list pets for adoption. Each pet has a detailed profile with contact information for the owner.", img: "images/web1-img-preview.png", link: "petAdoption.html", techs: ["HTML, CSS, JS, Python, Flask"] },
+        { title: "Contract Reimbursement", desc: "Automated script processing contract reimbursements from JSON files. Analyzes clauses, calculates eligible amounts, and generates reports.", img: "images/json-img-preview.png", link: "contract.html", techs: ["Java - SQL"]  },
+        { title: "Find Lost Documents App", desc: "Document recovery system where users can locate misplaced files by querying metadata (filename, date, type) stored in a relational database.", img: "images/oracle-img-preview.png", link: "lostDoc.html", techs: ["Java - Oracle"]  },
         { title: "A project in C", desc: "", img: "images/", link: "web1.html", techs: ["C"]}
 
     ],
